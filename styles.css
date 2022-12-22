@@ -20,7 +20,7 @@ img {
 }
 body {
     font-family: Hack-ZeroSlash,monospace;
-    color: var(--main-calm-bg);
+    color: var(--dark-accent);
 }
 
 .nav {
@@ -51,18 +51,41 @@ body {
 h1 {
     font-size: 70px;
     text-shadow: 2px 2px 2px var(--dark-accent);
-    
+    color: var(--main-calm-bg);
 }
-.welcome-section p {
+
+h2 {
     font-size: 30px;
-    color: var(--dark-accent);
-    text-shadow: var(--dark-accent);
+    color: var(--main-bright-bg);
+    text-shadow: 2px 2px 2px var(--dark-accent);
+}
+p {
+    font-size: 40px;
 }
 
 .projects-section {
     text-align: center;
     background-color: var(--main-calm-bg);
 }
+
+.call-to-action {
+    width: 75%;
+    text-align: center;
+    border: double var(--dark-accent);
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-final-bg);
+}
+
+
+.
 @media (prefers-reduced-motion: no-preference) {
     html {
           scroll-behavior: smooth;
