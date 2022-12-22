@@ -1,3 +1,11 @@
+:root {
+    --main-calm-bg: #c4b7cb;
+    --dark-accent: #545c52;
+    --links-nav: #f2c57c;
+    --main-bright-bg: #bfedef;
+    --main-final-bg: #98e2c6;
+}
+
 * ,
 *::before,
 *::after {
@@ -11,7 +19,8 @@ img {
     max-width: 100%;
 }
 body {
-    font-family: sans-serif;
+    font-family: Hack-ZeroSlash,monospace;
+    color: var(--main-calm-bg);
 }
 
 .nav {
@@ -21,7 +30,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: #545C52;
+    background: var(--links-nav);
+    border-bottom: double var(--dark-accent);
 }
 
 .welcome-section {
@@ -31,23 +41,27 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #C4B7CB;
+    background: linear-gradient(
+        var(--main-calm-bg),
+        var(--main-bright-bg),
+        var(--main-calm-bg)
+        );
 }
 
 h1 {
     font-size: 70px;
-    color: #545C52;
+    text-shadow: 2px 2px 2px var(--dark-accent);
+    
 }
-.welcome-p {
-    font-family: American Typewriter, serif;
-    font-style: italic;
-    font-size: 50px;
-    color: #545C52;
+.welcome-section p {
+    font-size: 30px;
+    color: var(--dark-accent);
+    text-shadow: var(--dark-accent);
 }
 
 .projects-section {
     text-align: center;
-    background-color: #98E2C6;
+    background-color: var(--main-calm-bg);
 }
 @media (prefers-reduced-motion: no-preference) {
     html {
