@@ -11,6 +11,17 @@ img {
     max-width: 100%;
 }
 
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: gray; /*change color later*/
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
     html {
           scroll-behavior: smooth;
