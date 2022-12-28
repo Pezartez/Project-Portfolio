@@ -34,13 +34,27 @@ body {
     left: 0;
     width: 100%;
     background: var(--links-nav);
-    border-bottom: double var(--dark-accent);
+    border-bottom: dashed var(--dark-accent);
 }
 
 .nav-list {
     display: flex;
     margin-right: 2rem;
+    
 }
+.nav-list a{
+    text-decoration: none;
+    color: var(--dark-accent);
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 1.3rem;
+}
+
+.nav-list a:hover {
+    color: var(--links-nav);
+    background: var(--dark-accent);
+}
+
 
 ul {
     display: block;
@@ -52,10 +66,6 @@ ul {
     list-style: none;
 }
 
-li {
-    display: list-item;
-
-}
 
 .welcome-section {
     display: flex;
@@ -67,18 +77,23 @@ li {
     background-color: var(--main-final-bg);
 }
 .intro {
-    border: double var(--dark-accent);
+    display: flex;
+    border: dashed var(--dark-accent);
+    height: 100px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-calm-bg);
 }
 
 h1 {
     font-size: 70px;
-    text-shadow: 2px 2px 2px var(--dark-accent);
+    text-shadow: 2px 2px 2px var(--links-nav);
 }
 
 h2 {
     font-size: 30px;
-    color: var(--main-bright-bg);
-    text-shadow: 2px 2px 2px var(--dark-accent);
+    text-shadow: 2px 2px 2px var(--links-nav);
 }
 
 
@@ -90,7 +105,7 @@ h2 {
 .call-to-action {
     width: 75%;
     text-align: center;
-    border: double var(--dark-accent);
+    border: dashed var(--dark-accent);
 }
 
 .contact-me {
