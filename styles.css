@@ -11,10 +11,9 @@ img {
     max-width: 100%;
 }
 
-body {
+* {
     font-family: Hack-ZeroSlash, monospace;
     color: var(--dark-accent);
-    line-height: 1.6;
     font-size: 20px;
     border: none;
     margin: auto;
@@ -28,6 +27,8 @@ body {
     width: 100%;
     background: var(--links-nav);
     border-bottom: dashed var(--dark-accent);
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -76,10 +77,15 @@ ul {
     height: 100vh;
     background-color: var(--main-final-bg);
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
 
+}
+.welcome-section img {
+    max-width: 250px;
+    height: auto;
 }
 
 
@@ -89,24 +95,42 @@ ul {
     align-items: center;
     justify-content: center;
     border: dashed var(--dark-accent);
-    width: 500px;
+    width: 700px;
     background: var(--main-calm-bg);
 }
+
+
 
 h1 {
     font-size: 70px;
     text-shadow: 2px 2px 2px var(--links-nav);
+    margin: 20px;
 }
 
 h2 {
     font-size: 30px;
     text-shadow: 2px 2px 2px var(--links-nav);
+    padding: 20px;
 }
 
 
 .projects-section {
     text-align: center;
     background-color: var(--main-calm-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.projects {
+    width: 250px;
+    height: 250px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .call-to-action {
