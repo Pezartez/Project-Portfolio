@@ -153,6 +153,11 @@ section {
     background-color: var(--main-final-bg);
 }
 
+.footer {
+    background-color: var(--main-bright-bg);
+    text-align: center;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
     html {
